@@ -1,0 +1,21 @@
+
+# Contador
+contador = 0
+
+# Monedas de 100
+for a in xrange(3):
+   # Monedas de 50
+      for b in xrange(1+(200-100*a)/50):
+         # Monedas de 20
+            for c in xrange(1+(200-100*a-50*b)/20):
+               # Monedas de 10
+                  for d in xrange(1+(200-100*a-50*b-20*c)/10):
+                     # Monedas de 5
+                        for e in xrange(1+(200-100*a-50*b-20*c-10*d)/5):
+                           # Monedas de 2
+                              for f in xrange(1+(200-100*a-50*b-20*c-10*d-5*e)/2):
+                                 contador += 1
+
+# Sumamos uno por el caso de 200 y lo imprimimos.
+print contador+1
+
